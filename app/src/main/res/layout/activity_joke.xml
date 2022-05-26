@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JokeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_go_back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TextView
+                android:id="@+id/current_joke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp">
+            <Button
+                android:id="@+id/btn_mark_fav"
+                android:layout_width="193dp"
+                android:layout_height="61dp"
+                android:background="@color/purple_200"
+                android:text="Mark as Favorite"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_next_joke"
+                android:layout_width="193dp"
+                android:layout_height="61dp"
+                android:background="@color/purple_200"
+                android:layout_centerHorizontal="true"
+                android:text="Next Joke"
+                android:layout_marginTop="80dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_next_fav"
+                android:layout_width="193dp"
+                android:layout_height="61dp"
+                android:background="@color/purple_200"
+                android:layout_centerHorizontal="true"
+                android:text="Next Favorite Joke"
+                android:layout_marginTop="161dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

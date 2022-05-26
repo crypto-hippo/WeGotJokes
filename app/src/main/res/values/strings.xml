@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">We Got Jokes</string>
+    <string name="txt_go_back">go back</string>
 </resources>
